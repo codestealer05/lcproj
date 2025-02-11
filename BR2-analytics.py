@@ -28,15 +28,33 @@ print(mode)
 
 genres = list(df["genres"])
 
-mode = []
-for i in genres:
-    if genres.count(i) > len(mode):
-        mode.append(i)
+genresnew = []
+for genre in genres:
+    temp = genre.split(",")
+    for j in temp:
+        genresnew.append(j)
+        
+genresset = {"Action"}
+for genre in genres:
+    temp = genre.split(",")
+    for j in temp:
+        genresset.add(j)     
+print(sorted(genresset))
+mode = ""
+temp = 0
+for genre in genresset:
+    temp2 = genresnew.count(genre)
+    if  temp2 > temp:
+        temp = temp2
+        mode = genre
 
-mode = mode[-1]
 print(mode)
 
-#username = input("Enter username: ")
+
+        
+
+
+#print(sorted(genresset))
 
 app = Flask(__name__)
 @app.route("/")

@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-    <title>Form</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+  />
+  <title>Form</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/home">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-                    viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-
-                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
-                        stroke="none">
-                        <path d="M310 2560 l0 -2560 2250 0 2250 0 0 2560 0 2560 -2250 0 -2250 0 0
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/home">
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="512.000000pt"
+          height="512.000000pt"
+          viewBox="0 0 512.000000 512.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M310 2560 l0 -2560 2250 0 2250 0 0 2560 0 2560 -2250 0 -2250 0 0
       -2560z m600 2110 l0 -150 -150 0 -150 0 0 150 0 150 150 0 150 0 0 -150z
       m3000 -305 l0 -455 -1350 0 -1350 0 0 455 0 455 1350 0 1350 0 0 -455z m600
       305 l0 -150 -150 0 -150 0 0 150 0 150 150 0 150 0 0 -150z m-3600 -605 l0
@@ -31,34 +43,82 @@
       0 150 0 0 -155z m3000 -300 l0 -455 -1350 0 -1350 0 0 455 0 455 1350 0 1350
       0 0 -455z m600 300 l0 -155 -150 0 -150 0 0 155 0 155 150 0 150 0 0 -155z
       m-3600 -605 l0 -150 -150 0 -150 0 0 150 0 150 150 0 150 0 0 -150z m3600 0
-      l0 -150 -150 0 -150 0 0 150 0 150 150 0 150 0 0 -150z" />
-                    </g>
-                </svg>
-        </div>
-        <a class="button" href="/scatterchart">Scatter chart</a>
-        <a class="button" href="/piechart">Pie chart</a>
-        <a class="button" href="/form">Form</a>
-    </nav>
-    <input class="input is-info" type="text" placeholder="What kind on genres do you like?"></input>
-
-    <div class="container section">
-        <div class="columns is-centered is-vcentered" style="height: 90vh">
-            <div class="flex-center">
-                <div class="container">
-                    <div class="column">
-                        <div class="is-size-1 mb3">Recommendations form</div>
-                        <div class="field" style="max-width: 600px">
-                            <input class="input" type="genre" placeholder="What genres do you like?" />
-                        </div>
-                        <div class="field">
-                            <p class="control">
-                                <button class="button is-success">Get recommendations</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      l0 -150 -150 0 -150 0 0 150 0 150 150 0 150 0 0 -150z"
+            />
+          </g>
+        </svg>
+      </a>
     </div>
+    <a class="button" href="/scatterchart">Scatter chart</a>
+    <a class="button" href="/piechart">Pie chart</a>
+    <a class="button" href="/form">Form</a>
+  </nav>
 
+  <div class="container section">
+    <div class="columns is-centered is-vcentered" style="height: 90vh">
+      <div class="flex-center">
+        <div class="container">
+          <div class="column">
+            <div class="is-size-1 mb3">Recommendations form</div>
+
+            <div class="grid">
+              <div class="cell">
+                <div class="field" style="max-width: 600px">
+                  <div class="select is-multiple is-primary">
+                    <select multiple size="8">
+                      <option value="Action">Action</option>
+                      <option value="Adventure">Adventure</option>
+                      <option value="Animation">Animation</option>
+                      <option value="Biography">Biography</option>
+                      <option value="Comedy">Comedy</option>
+                      <option value="Crime">Crime</option>
+                      <option value="Documentary">Documentary</option>
+                      <option value="Drama">Drama</option>
+                      <option value="Family">Family</option>
+                      <option value="Fantasy">Fantasy</option>
+                      <option value="Film-Noir">Film-Noir</option>
+                      <option value="History">History</option>
+                      <option value="Horror">Horror</option>
+                      <option value="Music">Music</option>
+                      <option value="Musical">Musical</option>
+                      <option value="Mystery">Mystery</option>
+                      <option value="News">News</option>
+                      <option value="Sci-Fi">Sci-Fi</option>
+                      <option value="Sport">Sport</option>
+                      <option value="Thriller">Thriller</option>
+                      <option value="War">War</option>
+                      <option value="Western">Western</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="is-size-small">
+                  hint: hold ctrl to choose multiple genres
+                </div>
+              </div>
+              <div class="cell">
+                <div class="is-size-5 mb-1">Earliest year</div>
+                <input
+                  class="input is-primary mb-5"
+                  type="startyear"
+                  placeholder="YYYY"
+                />
+                <div class="is-size-5 mb-1">Latest year</div>
+                <input
+                  class="input is-primary"
+                  type="endyear"
+                  placeholder="YYYY"
+                />
+              </div>
+              <div class="cell"></div>
+            </div>
+            <div class="field">
+              <p class="control">
+                <button class="button is-success">Get recommendations</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
