@@ -6,17 +6,25 @@
     href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
   />
   <title>Form</title>
+
+  <style>
+    .disabled {
+      pointer-events: none; /* Prevents interactions */
+      opacity: 0.5; /* Makes it look faded */
+    }
+  </style>
+  <script src="{{ url_for('static', filename='form.js') }}" defer></script>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/home">
+      <a class="navbar-item" href="/">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="512.000000pt"
-          height="512.000000pt"
+          width="512.000000px"
+          height="512.000000px"
           viewBox="0 0 512.000000 512.000000"
           preserveAspectRatio="xMidYMid meet"
         >
@@ -49,92 +57,132 @@
         </svg>
       </a>
     </div>
-    <a class="button" href="/scatterchart">Scatter chart</a>
-    <a class="button" href="/piechart">Pie chart</a>
-    <a class="button" href="/form">Form</a>
+    <a
+      class="navbar-item is-size-5-desktop is-size-2-touch"
+      href="/scatterchart"
+      >Scatter chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/piechart"
+      >Pie chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/form">Form</a>
   </nav>
 
-  <div class="container section">
-    <div class="columns is-centered is-vcentered" style="height: 90vh">
-      <div class="flex-center">
-        <div class="container">
-          <div class="column">
-            <div class="is-size-1 mb3">Recommendations form</div>
+  <div class="grid">
+    <div class="cell">
+      <div class="container">{{movieRecommendation | safe}}</div>
+    </div>
+    <div class="cell">
+      <div class="container section {{formDisabled}}" id="poll">
+        <div class="columns is-centered is-vcentered" style="height: 90vh">
+          <div class="flex-center">
+            <div class="container">
+              <div class="column">
+                <div class="is-size-1 mb-3">Recommendations form</div>
 
-            <div class="grid">
-              <div class="cell">
-                <div class="field" style="max-width: 600px">
-                  <div class="select is-multiple is-primary">
-                    <select multiple size="8">
-                      <option value="Action">Action</option>
-                      <option value="Adventure">Adventure</option>
-                      <option value="Animation">Animation</option>
-                      <option value="Biography">Biography</option>
-                      <option value="Comedy">Comedy</option>
-                      <option value="Crime">Crime</option>
-                      <option value="Documentary">Documentary</option>
-                      <option value="Drama">Drama</option>
-                      <option value="Family">Family</option>
-                      <option value="Fantasy">Fantasy</option>
-                      <option value="Film-Noir">Film-Noir</option>
-                      <option value="History">History</option>
-                      <option value="Horror">Horror</option>
-                      <option value="Music">Music</option>
-                      <option value="Musical">Musical</option>
-                      <option value="Mystery">Mystery</option>
-                      <option value="News">News</option>
-                      <option value="Sci-Fi">Sci-Fi</option>
-                      <option value="Sport">Sport</option>
-                      <option value="Thriller">Thriller</option>
-                      <option value="War">War</option>
-                      <option value="Western">Western</option>
-                    </select>
+                <div class="grid">
+                  <div class="cell">
+                    <div class="field" style="max-width: 600px">
+                      <div class="select is-multiple is-primary">
+                        <select multiple size="8" id="genres">
+                          <option value="Action">Action</option>
+                          <option value="Adventure">Adventure</option>
+                          <option value="Animation">Animation</option>
+                          <option value="Biography">Biography</option>
+                          <option value="Comedy">Comedy</option>
+                          <option value="Crime">Crime</option>
+                          <option value="Documentary">Documentary</option>
+                          <option value="Drama">Drama</option>
+                          <option value="Family">Family</option>
+                          <option value="Fantasy">Fantasy</option>
+                          <option value="Film-Noir">Film-Noir</option>
+                          <option value="History">History</option>
+                          <option value="Horror">Horror</option>
+                          <option value="Music">Music</option>
+                          <option value="Musical">Musical</option>
+                          <option value="Mystery">Mystery</option>
+                          <option value="News">News</option>
+                          <option value="Sci-Fi">Sci-Fi</option>
+                          <option value="Sport">Sport</option>
+                          <option value="Thriller">Thriller</option>
+                          <option value="War">War</option>
+                          <option value="Western">Western</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="is-size-small">
+                      hint: hold ctrl to choose multiple genres
+                    </div>
+                  </div>
+                  <div class="cell is-col-span-2">
+                    <div class="is-size-5 mb-3">
+                      What is the "Golden Decade" in cinematography in your
+                      opinion?
+                    </div>
+                    <div class="select is-primary">
+                      <select id="decade">
+                        <option value="2020" selected>2020s</option>
+                        <option value="2010">2010s</option>
+                        <option value="2000">2000s</option>
+                        <option value="1990">1990s</option>
+                        <option value="1980">1980s</option>
+                        <option value="1970">1970s</option>
+                        <option value="1960">1960s</option>
+                        <option value="1950">1950s</option>
+                        <option value="1940">1940s</option>
+                        <option value="1930">1930s</option>
+                        <option value="1920">1920s</option>
+                        <option value="1910">1910s</option>
+                      </select>
+                    </div>
+                    <div class="is-size-5 mt-6">
+                      Would you agree with this statement: A "good movie" must
+                      be longer than 2 hours? <br />
+                      <br />
+                      <div class="is-size-5 mt-0">
+                        Select here:
+                        <span class="control ml-2 is-size-5">
+                          <label class="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            I agree
+                          </label>
+                        </span>
+                        <!--button
+                          class="button is-ghost is-small"
+                          style="height: 30px"
+                          id="agree_disagree"
+                          onclick="agreeButton()"
+                        >
+                          <div class="is-size-5">here</div>
+                        </button-->
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="is-size-small">
-                  hint: hold ctrl to choose multiple genres
-                </div>
-              </div>
-              <div class="cell is-col-span-2">
-                <div class="is-size-5 mb-3">
-                  What is the "Golden Decade" in cinematography in your opinion?
-                </div>
-                <div class="select is-primary" id="golden_decade">
-                  <select>
-                    <option value="2020" selected>2020s</option>
-                    <option value="2010">2010s</option>
-                    <option value="2000">2000s</option>
-                    <option value="1990">1990s</option>
-                    <option value="1980">1980s</option>
-                    <option value="1970">1970s</option>
-                    <option value="1960">1960s</option>
-                    <option value="1950">1950s</option>
-                    <option value="1940">1940s</option>
-                    <option value="1930">1930s</option>
-                    <option value="1920">1920s</option>
-                    <option value="1910">1910s</option>
-                  </select>
-                </div>
-                <div class="is-size-5 mt-6">
-                  Would you agree with this statement: A "good movie" must be
-                  longer than 2 hours? <br />
-                  <br />
-                  <div class="is-size-5 mt-0">
-                    Click here to choose:<button class="button is-ghost is-small" style="height: 30px;">
-                      <div class="is-size-5">here</div>
+                <div class="field">
+                  <p class="control">
+                    <button class="button is-success" onclick="readForm()">
+                      Submit
                     </button>
-                  </div>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="field">
-              <p class="control">
-                <button class="button is-success">Get recommendations</button>
-              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="cell">
+      <div class="block" id="history">
+        <section class="hero is-medium is-success">
+          {{historyHero | safe}} {{newHero | safe}}
+        </section>
+      </div>
+    </div>
   </div>
+  {% if reload_page %}
+  <script>
+    window.location.reload();
+  </script>
+  {% endif %}
 </body>

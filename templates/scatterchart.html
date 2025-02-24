@@ -11,12 +11,12 @@
 <body>
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/home">
+      <a class="navbar-item" href="/">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="512.000000pt"
-          height="512.000000pt"
+          width="512.000000px"
+          height="512.000000px"
           viewBox="0 0 512.000000 512.000000"
           preserveAspectRatio="xMidYMid meet"
         >
@@ -49,13 +49,44 @@
         </svg>
       </a>
     </div>
-    <a class="navbar-brand" href="/home"></a>
-    <a class="button" href="/scatterchart">Scatter chart</a>
-    <a class="button" href="/piechart">Pie chart</a>
-    <a class="button" href="/form">Form</a>
+
+    <a
+      class="navbar-item is-size-5-desktop is-size-2-touch"
+      href="/scatterchart"
+      >Scatter chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/piechart"
+      >Pie chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/form"
+      >Form</a
+    >
   </nav>
-  <p>Placeholder Text</p>
-  <div class="container is-centered">
-    <div class="notification">{{scatterchart | safe}}</div>
+  <div class="columns">
+    <!--div class="column is-two-fifths-desktop">
+      
+    </div-->
+    <div class="column is-6-desktop is-offset-3-desktop is-full-touch">
+      <div class="container is-fluid mt-6">
+        <div class="is-size-5-desktop is-size-2-touch has-text-justified">
+          The scatter plot here shows how a film's average rating and the
+          quantity of votes it has gotten are related. The average rating and
+          the quantity of user votes is displayed on the x and y-axis
+          respectively. We can see from the visualisation that: More votes are
+          often cast for films with higher ratings (above 7). The data points
+          clearly cluster around the 6–8 rating range, indicating that the
+          majority of films are in this range. This suggests that, better than
+          average movies, are watched more. Movies at the extremes of the chart
+          generally show fewer votes, which suggests that they are either less
+          popular or cater to niche audiences. This graph illustrates the
+          relationship between user engagement (as indicated by votes) and
+          perceived film quality, revealing a pattern where more popular films
+          frequently get higher ratings and more votes. 🎬🍿
+        </div>
+      </div>
+      <div class="container is-fluid mt-6">
+        <div class="notification">{{scatterchart | safe}}</div>
+      </div>
+    </div>
   </div>
 </body>

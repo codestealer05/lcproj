@@ -11,12 +11,12 @@
 <body>
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/home">
+      <a class="navbar-item" href="/">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="512.000000pt"
-          height="512.000000pt"
+          width="512.000000px"
+          height="512.000000px"
           viewBox="0 0 512.000000 512.000000"
           preserveAspectRatio="xMidYMid meet"
         >
@@ -49,12 +49,37 @@
         </svg>
       </a>
     </div>
-    <a class="button" href="/scatterchart">Scatter chart</a>
-    <a class="button" href="/piechart">Pie chart</a>
-    <a class="button" href="/form">Form</a>
+    <a
+      class="navbar-item is-size-5-desktop is-size-2-touch"
+      href="/scatterchart"
+      >Scatter chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/piechart"
+      >Pie chart</a
+    >
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/form"
+      >Form</a
+    >
   </nav>
-  <p>Placeholder Text</p>
-  <div class="container is-centered">
-    <div class="notification">{{piechart | safe}}</div>
+  <div class="column is-6-desktop is-offset-3-desktop is-full-touch">
+    <div class="container is-fluid mt-6">
+      <div class="is-size-5-desktop is-size-2-touch has-text-justified">
+        The distribution of different movie genres according to popularity is
+        seen in the pie chart below. With a sizable portion of the audience's
+        attention, drama comes out as the most popular genre, followed by comedy
+        and action. The industry is dominated by these genres, which represent
+        the tastes of viewers for humour, excitement, and depth in storytelling.
+        While speciality genres like fantasy, sci-fi, and animation target
+        particular audience segments, other genres like crime, romance, and
+        thriller are also rather prevalent. The graphic illustrates how the film
+        industry is impacted by the varied tastes of its audience. This analysis
+        provides insights into the genres that stay popular with viewers
+        throughout the world while helping to identify trends in movie
+        consumption. 🎬🍿
+      </div>
+    </div>
+    <div class="container is-fluid mt-6">
+      <div class="notification">{{piechart | safe}}</div>
+    </div>
   </div>
 </body>

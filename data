@@ -1,0 +1,633 @@
+[
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Biography",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama",
+            "Mystery",
+            "Sci-Fi",
+            "War"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "News",
+            "Thriller",
+            "War"
+        ],
+        "decade": 1970,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "News",
+            "Thriller",
+            "War"
+        ],
+        "decade": 1970,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "News",
+            "Sport",
+            "Thriller",
+            "War"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "News",
+            "Sport",
+            "Thriller",
+            "War"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Animation",
+            "Crime",
+            "Family"
+        ],
+        "decade": 1970,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Biography",
+            "Crime",
+            "Music"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Family",
+            "Fantasy",
+            "Film-Noir"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Family",
+            "Fantasy",
+            "Film-Noir"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Family",
+            "Fantasy",
+            "Film-Noir"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Documentary",
+            "Drama"
+        ],
+        "decade": 1990,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Comedy"
+        ],
+        "decade": 2020,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Adventure",
+            "Documentary"
+        ],
+        "decade": 2020,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Sci-Fi",
+            "War"
+        ],
+        "decade": 2020,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Thriller",
+            "War",
+            "Western"
+        ],
+        "decade": 2000,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Music",
+            "Mystery",
+            "Sci-Fi"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "News",
+            "Thriller"
+        ],
+        "decade": 2020,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Thriller",
+            "Western"
+        ],
+        "decade": 2020,
+        "agreement": false
+    },
+    {
+        "genres": [
+            "Family"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Thriller",
+            "Western"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Family"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Animation",
+            "History",
+            "Musical"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Animation",
+            "Crime"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Comedy",
+            "Documentary"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Comedy",
+            "Crime"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "decade": 2010,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Comedy"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Biography"
+        ],
+        "decade": 2020,
+        "agreement": true
+    },
+    {
+        "genres": [
+            "Animation",
+            "Fantasy"
+        ],
+        "decade": 2020,
+        "agreement": true
+    }
+]
