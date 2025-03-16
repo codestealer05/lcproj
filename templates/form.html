@@ -9,8 +9,8 @@
 
   <style>
     .disabled {
-      pointer-events: none; /* Prevents interactions */
-      opacity: 0.5; /* Makes it look faded */
+      pointer-events: none;
+      opacity: 0.5;
     }
   </style>
   <script src="{{ url_for('static', filename='form.js') }}" defer></script>
@@ -65,7 +65,14 @@
     <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/piechart"
       >Pie chart</a
     >
-    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/form">Form</a>
+    <a class="navbar-item is-size-5-desktop is-size-2-touch" href="/form"
+      >Form</a
+    >
+    <a
+      class="navbar-item is-size-5-desktop is-size-2-touch"
+      href="/recommendation"
+      >Recommendation</a
+    >
   </nav>
 
   <div class="grid">
